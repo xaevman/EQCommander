@@ -1,0 +1,9 @@
+cmdChannel  = cmd_chan
+cmdLog      = /Users/jc/Library/Application Support/EverQuest/PlayerLogs/eqlog_MyChar_52.txt
+
+statChannel = 3
+
+masterChar  = MyChar
+
+slaveChar   = Char1
+slaveChar   = Char2

@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		492597F9178E5E76007E3565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492597F8178E5E76007E3565 /* Foundation.framework */; };
+		492597FC178E5E76007E3565 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 492597FB178E5E76007E3565 /* main.mm */; };
+		49259800178E5E76007E3565 /* EQCommander.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 492597FF178E5E76007E3565 /* EQCommander.1 */; };
+		4961553F1798F465002CA640 /* eqcMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4961553E1798F465002CA640 /* eqcMain.cpp */; };
+		496155431798F816002CA640 /* eqcConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 496155421798F816002CA640 /* eqcConfig.cpp */; };
+		4961554617998397002CA640 /* eqcCmdLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4961554517998397002CA640 /* eqcCmdLog.cpp */; };
+		4961554917998EDA002CA640 /* eqcCmdParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4961554817998EDA002CA640 /* eqcCmdParser.cpp */; };
+		4961554C1799A1D5002CA640 /* eqcMacro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4961554B1799A1D5002CA640 /* eqcMacro.cpp */; };
+		497FFB61179ADF4F00382449 /* Assist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497FFB5A179ADF3C00382449 /* Assist */; };
+		497FFB62179ADF4F00382449 /* Cast in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497FFB5B179ADF3C00382449 /* Cast */; };
+		497FFB64179ADF4F00382449 /* SendKey in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497FFB5D179ADF3C00382449 /* SendKey */; };
+		497FFB65179ADF4F00382449 /* Sit in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497FFB5E179ADF3C00382449 /* Sit */; };
+		497FFB66179ADF4F00382449 /* Stand in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497FFB5F179ADF3C00382449 /* Stand */; };
+		497FFB67179ADF4F00382449 /* Target in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497FFB60179ADF3C00382449 /* Target */; };
+		497FFB69179AE55D00382449 /* sys_identify in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497FFB68179AE55400382449 /* sys_identify */; };
+		4990E7FE17F895CE00363C50 /* eqcDmgParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4990E7FD17F895CE00363C50 /* eqcDmgParser.cpp */; };
+		49A1B52E178FE1A400B325C1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49259806178E600B007E3565 /* AppKit.framework */; };
+		49AC4D79179C92ED00454D39 /* EQCommander.sample in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49AC4D76179C902100454D39 /* EQCommander.sample */; };
+		7FA251BB17F2AB3900986798 /* Follow in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F6F086A17F2AADA00035B27 /* Follow */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		492597F3178E5E76007E3565 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				49259800178E5E76007E3565 /* EQCommander.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		49AC4D77179C92AB00454D39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = config;
+			dstSubfolderSpec = 16;
+			files = (
+				49AC4D79179C92ED00454D39 /* EQCommander.sample in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49B55E7C179A3996007CD06B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = macros;
+			dstSubfolderSpec = 16;
+			files = (
+				7FA251BB17F2AB3900986798 /* Follow in CopyFiles */,
+				497FFB69179AE55D00382449 /* sys_identify in CopyFiles */,
+				497FFB61179ADF4F00382449 /* Assist in CopyFiles */,
+				497FFB62179ADF4F00382449 /* Cast in CopyFiles */,
+				497FFB64179ADF4F00382449 /* SendKey in CopyFiles */,
+				497FFB65179ADF4F00382449 /* Sit in CopyFiles */,
+				497FFB66179ADF4F00382449 /* Stand in CopyFiles */,
+				497FFB67179ADF4F00382449 /* Target in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		492597F5178E5E76007E3565 /* EQCommander */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EQCommander; sourceTree = BUILT_PRODUCTS_DIR; };
+		492597F8178E5E76007E3565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		492597FB178E5E76007E3565 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		492597FE178E5E76007E3565 /* EQCommander-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EQCommander-Prefix.pch"; sourceTree = "<group>"; };
+		492597FF178E5E76007E3565 /* EQCommander.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = EQCommander.1; sourceTree = "<group>"; };
+		49259806178E600B007E3565 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4961553E1798F465002CA640 /* eqcMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eqcMain.cpp; sourceTree = "<group>"; };
+		496155401798F46F002CA640 /* eqcMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eqcMain.h; sourceTree = "<group>"; };
+		496155421798F816002CA640 /* eqcConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eqcConfig.cpp; sourceTree = "<group>"; };
+		4961554517998397002CA640 /* eqcCmdLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eqcCmdLog.cpp; sourceTree = "<group>"; };
+		4961554817998EDA002CA640 /* eqcCmdParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eqcCmdParser.cpp; sourceTree = "<group>"; };
+		4961554B1799A1D5002CA640 /* eqcMacro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eqcMacro.cpp; sourceTree = "<group>"; };
+		497FFB5A179ADF3C00382449 /* Assist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Assist; sourceTree = "<group>"; };
+		497FFB5B179ADF3C00382449 /* Cast */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cast; sourceTree = "<group>"; };
+		497FFB5D179ADF3C00382449 /* SendKey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SendKey; sourceTree = "<group>"; };
+		497FFB5E179ADF3C00382449 /* Sit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sit; sourceTree = "<group>"; };
+		497FFB5F179ADF3C00382449 /* Stand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stand; sourceTree = "<group>"; };
+		497FFB60179ADF3C00382449 /* Target */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Target; sourceTree = "<group>"; };
+		497FFB68179AE55400382449 /* sys_identify */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sys_identify; sourceTree = "<group>"; };
+		4990E7FD17F895CE00363C50 /* eqcDmgParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eqcDmgParser.cpp; sourceTree = "<group>"; };
+		49AC4D76179C902100454D39 /* EQCommander.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EQCommander.sample; sourceTree = "<group>"; };
+		7F6F086A17F2AADA00035B27 /* Follow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Follow; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		492597F2178E5E76007E3565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A1B52E178FE1A400B325C1 /* AppKit.framework in Frameworks */,
+				492597F9178E5E76007E3565 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492597EC178E5E76007E3565 = {
+			isa = PBXGroup;
+			children = (
+				49AC4D75179C901600454D39 /* config */,
+				49B55E73179A38D4007CD06B /* macros */,
+				492597FA178E5E76007E3565 /* EQCommander */,
+				492597F7178E5E76007E3565 /* Frameworks */,
+				492597F6178E5E76007E3565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		492597F6178E5E76007E3565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				492597F5178E5E76007E3565 /* EQCommander */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		492597F7178E5E76007E3565 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49259806178E600B007E3565 /* AppKit.framework */,
+				492597F8178E5E76007E3565 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		492597FA178E5E76007E3565 /* EQCommander */ = {
+			isa = PBXGroup;
+			children = (
+				492597FB178E5E76007E3565 /* main.mm */,
+				492597FF178E5E76007E3565 /* EQCommander.1 */,
+				492597FD178E5E76007E3565 /* Supporting Files */,
+				4961553E1798F465002CA640 /* eqcMain.cpp */,
+				496155401798F46F002CA640 /* eqcMain.h */,
+				496155421798F816002CA640 /* eqcConfig.cpp */,
+				4961554517998397002CA640 /* eqcCmdLog.cpp */,
+				4961554817998EDA002CA640 /* eqcCmdParser.cpp */,
+				4961554B1799A1D5002CA640 /* eqcMacro.cpp */,
+				4990E7FD17F895CE00363C50 /* eqcDmgParser.cpp */,
+			);
+			path = EQCommander;
+			sourceTree = "<group>";
+		};
+		492597FD178E5E76007E3565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				492597FE178E5E76007E3565 /* EQCommander-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49AC4D75179C901600454D39 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				49AC4D76179C902100454D39 /* EQCommander.sample */,
+			);
+			name = config;
+			path = EQCommander/config;
+			sourceTree = "<group>";
+		};
+		49B55E73179A38D4007CD06B /* macros */ = {
+			isa = PBXGroup;
+			children = (
+				497FFB68179AE55400382449 /* sys_identify */,
+				497FFB5A179ADF3C00382449 /* Assist */,
+				497FFB5B179ADF3C00382449 /* Cast */,
+				497FFB5D179ADF3C00382449 /* SendKey */,
+				497FFB5E179ADF3C00382449 /* Sit */,
+				497FFB5F179ADF3C00382449 /* Stand */,
+				497FFB60179ADF3C00382449 /* Target */,
+				7F6F086A17F2AADA00035B27 /* Follow */,
+			);
+			name = macros;
+			path = EQCommander/macros;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		492597F4178E5E76007E3565 /* EQCommander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49259803178E5E76007E3565 /* Build configuration list for PBXNativeTarget "EQCommander" */;
+			buildPhases = (
+				492597F1178E5E76007E3565 /* Sources */,
+				492597F2178E5E76007E3565 /* Frameworks */,
+				492597F3178E5E76007E3565 /* CopyFiles */,
+				49B55E7C179A3996007CD06B /* CopyFiles */,
+				49AC4D77179C92AB00454D39 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EQCommander;
+			productName = EQCommander;
+			productReference = 492597F5178E5E76007E3565 /* EQCommander */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		492597ED178E5E76007E3565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = jc2net;
+			};
+			buildConfigurationList = 492597F0178E5E76007E3565 /* Build configuration list for PBXProject "EQCommander" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 492597EC178E5E76007E3565;
+			productRefGroup = 492597F6178E5E76007E3565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				492597F4178E5E76007E3565 /* EQCommander */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		492597F1178E5E76007E3565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492597FC178E5E76007E3565 /* main.mm in Sources */,
+				4961553F1798F465002CA640 /* eqcMain.cpp in Sources */,
+				496155431798F816002CA640 /* eqcConfig.cpp in Sources */,
+				4961554617998397002CA640 /* eqcCmdLog.cpp in Sources */,
+				4961554917998EDA002CA640 /* eqcCmdParser.cpp in Sources */,
+				4961554C1799A1D5002CA640 /* eqcMacro.cpp in Sources */,
+				4990E7FE17F895CE00363C50 /* eqcDmgParser.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		49259801178E5E76007E3565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		49259802178E5E76007E3565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		49259804178E5E76007E3565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EQCommander/EQCommander-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49259805178E5E76007E3565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EQCommander/EQCommander-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		492597F0178E5E76007E3565 /* Build configuration list for PBXProject "EQCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49259801178E5E76007E3565 /* Debug */,
+				49259802178E5E76007E3565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49259803178E5E76007E3565 /* Build configuration list for PBXNativeTarget "EQCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49259804178E5E76007E3565 /* Debug */,
+				49259805178E5E76007E3565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 492597ED178E5E76007E3565 /* Project object */;
+}
