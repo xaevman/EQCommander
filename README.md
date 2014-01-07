@@ -8,7 +8,7 @@ On 2013/11/18 SOE shut down the EQMac server (Al'Kabor) so this application is n
 * External macros with the ability to process runtime arguments. Not limited to EQ's basic macro lengths and syntax (though you could execute those macros too).
 * Command scheduling and loops, to make playing bards possible. EQMac did not have some of the later bard helper macro elements that SOE added on PC later in EQ's life.
 * Automatic damage parsing and statistics tracking: Dps. Total, average, and max damage delt during parse. Hit/miss/mob evaded % split. Evasion %. Estimated mitigation %.
-* A filtering system that keeps multiple players runningn EQCommander from accidently, or maliciously, issuing commands to other players' EQCommander instances. This same system can be used to allow another commander instance to temporarily issue commands to characters under your control. Running the group's cleric but need to afk? No problem, just 'trust' one of your buddies and they can take on healing duties while you go pay the pizza guy.
+* A filtering system that keeps multiple players running EQCommander from accidently, or maliciously, issuing commands to other players' EQCommander instances. This same system can be used to allow another commander instance to temporarily issue commands to characters under your control. Running the group's cleric but need to afk? No problem, just 'trust' one of your buddies and they can take on healing duties while you go pay the pizza guy.
 
 If this app was at all relevant anymore, I'd write some tuts and tips and tricks, but alas... it exists only for posterity now :)
 
